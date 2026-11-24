@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lab 02：拆開一顆藥｜從零開始學藥</title>
+<meta name="description" content="標示 200 毫克的藥錠，秤起來卻有 500 毫克。一次拿掉一種賦形劑，看看藥錠會怎麼壞掉。">
+<meta property="og:image" content="covers/s1-tablet.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/widgets.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="stage-1.html"><svg viewBox="0 0 26 26" aria-hidden="true"><g transform="rotate(-35 13 13)"><rect x="2" y="8" width="22" height="10" rx="5" fill="#fffdf8" stroke="currentColor" stroke-width="2"/><path d="M13 8h6a5 5 0 0 1 0 10h-6z" fill="#3a46aa" stroke="currentColor" stroke-width="2"/></g></svg>從零開始學藥</a>
+    <nav aria-label="主選單">
+      <a class="hide-s" href="stage-1.html">階段 1</a>
+      <a class="hide-s" href="stage-2.html">階段 2</a>
+      <a class="hide-s" href="stage-3.html">階段 3</a>
+      <button class="iconbtn" id="themeBtn" aria-label="切換深色模式"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <p class="crumb"><a href="stage-1.html">階段 1</a><span>/</span>Lab 02</p>
+  <div class="hero">
+    <p class="kicker ind">Lab 02</p>
+    <h1>拆開一顆藥：活性成分與賦形劑</h1>
+    <p class="sub" style="font-size:1.08rem">標示 200 毫克的藥錠，秤起來卻有 500 毫克。一次拿掉一種賦形劑，看看藥錠會怎麼壞掉。</p>
+    <p class="meta">發布於 2026 年 11 月 24 日 <span class="tag">賦形劑</span><span class="tag">活性成分</span><span class="tag">安慰劑</span></p>
+  </div>
+
+  <div class="widget" id="wTablet">
+    <div class="bar"><span class="mono">Lab 02</span><b>拆開一顆藥</b><span class="prog"></span></div>
+    <div class="in"></div>
+  </div>
+
+  <section class="howto" aria-labelledby="how-h">
+    <h2 id="how-h">怎麼玩</h2>
+    <p>點上面的成分（或右邊的清單）看它負責什麼，再按「拿掉它」。藥錠的樣子、重量、崩解時間和每顆劑量誤差會跟著變。可以一次拿掉好幾種，也可以按「放回去」。</p>
+    <p>值得試的：拿掉黏合劑（藥錠碎掉）、拿掉崩解劑（在胃裡像石頭）、拿掉助流劑（每顆劑量不一樣），最後試試只拿掉活性成分。</p>
+  </section>
+
+  <section aria-labelledby="model-h">
+    <h2 id="model-h">說明</h2>
+    <p class="secsub">這個練習用到的資料和限制。</p>
+    <div class="card model"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38 L32 28 L44 34 L20 44Z" fill="#3a46aa"/><rect x="10" y="10" width="22" height="26" rx="3" fill="#fffdf8" stroke="#1d2033" stroke-width="2"/><path d="M15 17h12M15 22h12M15 27h8" stroke="#1d2033" stroke-width="2" stroke-linecap="round"/></svg><p>各成分的比例是示意用的假設，真實藥品的配方會依成分和製程不同。賦形劑名稱是常見的例子，不代表每一種藥都有。崩解時間與劑量誤差的數字只用來比較「有沒有這個成分」的差別。</p></div>
+  </section>
+
+  <nav class="stagenav" aria-label="Lab 導覽">
+    <a href="lab-forms.html"><small>上一個 Lab</small><b>Lab 01：同一種藥，三種樣子</b></a>
+    <a class="r" href="lab-bag.html"><small>下一個 Lab</small><b>Lab 03：藥袋偵探</b></a>
+  </nav>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a class="logo" href="stage-1.html">從零開始學藥</a>
+    <p style="margin:0">本頁為一般教學內容，不是用藥建議。實際用藥請遵照醫師、藥師指示與藥品仿單。<br>互動 Lab 以 SIMULAB 引擎製作（KAPRI LAB，MIT 授權）。</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script src="assets/widgets.js"></script>
+</body>
+</html>

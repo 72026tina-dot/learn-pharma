@@ -1,0 +1,79 @@
+/* 階段 1 的互動練習（HTML 版 Lab）：拆開一顆藥、藥袋偵探、藥櫃、選劑型 */
+.widget{margin:28px 0 0;border:1px solid var(--rule);border-radius:16px;overflow:hidden;background:var(--card);box-shadow:var(--shadow);border-right:5px solid var(--indigo)}
+.widget .bar{display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px solid var(--rule);font-size:.92rem}
+.widget .bar .mono{color:var(--indigo);font-size:.82rem}
+.widget .bar .prog{margin-left:auto;color:var(--muted);font-family:"JetBrains Mono",monospace;font-size:.8rem}
+.widget .in{padding:18px}
+.w-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+@media (max-width:700px){.w-grid{grid-template-columns:1fr}}
+.w-note{font-size:.82rem;color:var(--muted);margin:14px 0 0}
+.w-verdict{margin-top:12px;padding:10px 14px;border-radius:10px;background:var(--ok-soft);border-left:4px solid var(--ok);font-size:.95rem}
+.w-verdict b{display:block}
+.w-verdict.bad{background:var(--bad-soft);border-color:var(--bad)}
+.w-verdict.bad b{color:var(--bad)}
+.w-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}
+.w-stat{border-top:2px solid var(--rule);padding-top:6px}
+.w-stat .v{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:1.05rem}
+.w-stat .k{font-size:.78rem;color:var(--muted)}
+.w-stat.bad{border-color:var(--bad)} .w-stat.bad .v{color:var(--bad)}
+.w-btn{font:inherit;font-weight:700;padding:8px 16px;border-radius:10px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer}
+.w-btn.ghost{background:transparent;color:var(--ink)}
+.w-btn:disabled{opacity:.3;cursor:default}
+.w-fb{min-height:1.4em;margin:12px 0;font-size:.95rem}
+.w-actions{display:flex;justify-content:space-between;align-items:center;gap:10px;color:var(--muted);font-size:.88rem}
+.opt.right{border-color:var(--ok)!important;background:var(--ok-soft)!important}
+.opt.wrong{border-color:var(--bad)!important;background:var(--bad-soft)!important}
+/* tablet */
+.tab-svg{width:100%;max-width:320px;height:auto;display:block;margin:0 auto}
+.compbar{display:flex;height:34px;border-radius:8px;overflow:hidden;border:1px solid var(--rule);margin:8px 0 4px}
+.compbar button{border:0;padding:0;cursor:pointer;min-width:6px;transition:flex-grow .4s,opacity .3s}
+.compbar button.sel{outline:3px solid var(--ink);outline-offset:-3px}
+.compbar button.gone{opacity:.15}
+.scale{display:flex;justify-content:space-between;font-size:.75rem;color:var(--muted);font-family:"JetBrains Mono",monospace}
+.comp-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:6px;margin:0 0 12px}
+.comp-list button{font:inherit;font-size:.88rem;display:flex;gap:8px;align-items:center;text-align:left;padding:6px 10px;border:1px solid var(--rule);border-radius:8px;background:transparent;color:var(--ink);cursor:pointer}
+.comp-list button[aria-pressed="true"]{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.comp-list button.gone{text-decoration:line-through;color:var(--muted)}
+.sw{width:12px;height:12px;border-radius:3px;flex:none}
+.comp-card{border:1px solid var(--rule);border-radius:12px;padding:12px 14px;background:var(--sheet)}
+.comp-card h3{margin:0;font-size:1.1rem}
+.comp-card .ex{font-size:.85rem;color:var(--muted);margin:0 0 6px}
+.comp-card p{margin:0 0 10px}
+/* bag */
+.bag{border:1px solid var(--rule);border-radius:6px 6px 14px 14px;background:var(--paper);overflow:hidden}
+.bag-top{background:#3f6fe0;color:#fff;padding:8px 14px;font-size:.85rem;display:flex;justify-content:space-between}
+.bag-pill{display:flex;justify-content:center;padding:14px 0 4px}
+.bag-pill svg{width:170px;height:auto}
+.bag dl{margin:0;padding:6px 14px 14px;display:grid;grid-template-columns:5em 1fr;gap:6px 10px;font-size:.95rem}
+.bag dt{color:var(--muted)}
+.bag dd{margin:0;border-radius:4px;padding:0 4px;transition:background .3s}
+.bag dd.clue{background:rgba(233,169,46,.35);box-shadow:0 0 0 2px #e9a92e}
+.w-q{font-weight:700;margin:0 0 8px}
+.w-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px}
+.w-opts button{font:inherit;font-size:.93rem;text-align:left;padding:9px 12px;border-radius:10px;border:1px solid var(--rule);background:transparent;color:var(--ink);cursor:pointer}
+.w-opts button[aria-pressed="true"]{border-color:var(--indigo);box-shadow:inset 0 0 0 1px var(--indigo)}
+/* cabinet */
+.shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:0 0 14px;padding:14px;border-radius:12px;background:var(--sheet);border-bottom:8px solid #cfa56a}
+.mbox{font:inherit;text-align:left;border:1.5px solid var(--rule);border-radius:8px;padding:0;background:var(--card);color:var(--ink);cursor:pointer;overflow:hidden;display:flex;flex-direction:column}
+.mbox .lid{height:10px}
+.mbox .bn{font-weight:700;font-size:1.02rem;padding:8px 10px 0}
+.mbox .ty{font-size:.78rem;color:var(--muted);padding:0 10px}
+.mbox .ing{font-size:.8rem;padding:6px 10px 10px;line-height:1.5;border-top:1px dashed var(--rule);margin-top:6px}
+.mbox[aria-pressed="true"]{border-color:var(--indigo);box-shadow:0 0 0 2px var(--indigo)}
+.mbox.right{border-color:var(--ok);box-shadow:0 0 0 2px var(--ok)}
+.mbox.wrong{border-color:var(--bad);box-shadow:0 0 0 2px var(--bad)}
+.mbox.miss{border-style:dashed;border-color:#e9a92e;box-shadow:0 0 0 2px #e9a92e}
+.mbox mark{background:rgba(233,169,46,.4);color:inherit;border-radius:3px;padding:0 2px}
+.sum{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.meter{flex:1;min-width:200px;height:14px;border-radius:7px;background:var(--rule);position:relative;overflow:hidden}
+.meter i{position:absolute;left:0;top:0;bottom:0;background:#e9a92e;transition:width .5s}
+.meter i.over{background:var(--bad)}
+/* scenarios */
+.scn{border:1px solid var(--rule);border-radius:12px;padding:16px;background:var(--sheet)}
+.scn .who{font-size:.85rem;color:var(--muted);font-family:"JetBrains Mono",monospace}
+.scn .say{font-size:1.15rem;font-weight:700;margin:4px 0 14px}
+.forms{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px}
+.forms button{font:inherit;font-size:.92rem;padding:10px 8px;border:1px solid var(--rule);border-radius:10px;background:var(--card);color:var(--ink);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px}
+.forms button span{font-size:1.4rem;line-height:1}
+.forms button:disabled{cursor:default}
+@media (prefers-reduced-motion:reduce){.widget *{transition:none!important}}
