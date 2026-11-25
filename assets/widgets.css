@@ -77,3 +77,20 @@
 .forms button span{font-size:1.4rem;line-height:1}
 .forms button:disabled{cursor:default}
 @media (prefers-reduced-motion:reduce){.widget *{transition:none!important}}
+/* ---- 階段 6 · 期末挑戰（#wFinal）---- */
+.fn-intro{margin:0 0 14px;font-size:.95rem}
+.fn-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:0 0 14px}
+.fn-card{font:inherit;text-align:left;border:1.5px solid var(--rule);border-radius:10px;padding:0;background:var(--card);color:var(--ink);cursor:pointer;overflow:hidden;display:flex;flex-direction:column}
+.fn-top{height:8px}
+.fn-who{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:.88rem;padding:8px 12px 0}
+.fn-flag{color:var(--bad);font-size:1.1rem;opacity:0;transition:opacity .2s}
+.fn-card[aria-pressed="true"]{border-color:var(--bad);box-shadow:0 0 0 2px var(--bad)}
+.fn-card[aria-pressed="true"] .fn-flag{opacity:1}
+.fn-txt{margin:4px 12px 10px;font-size:.92rem;line-height:1.55}
+.fn-why{margin:0;padding:10px 12px;border-top:1px dashed var(--rule);font-size:.86rem;line-height:1.5;background:var(--sheet)}
+.fn-why b{display:block;margin-bottom:2px}
+.fn-why a{display:inline-block;margin-top:6px;font-weight:700}
+.fn-card.right{border-color:var(--ok);box-shadow:0 0 0 2px var(--ok)} .fn-card.right .fn-why b{color:var(--ok)}
+.fn-card.wrong{border-color:var(--bad);box-shadow:0 0 0 2px var(--bad)} .fn-card.wrong .fn-why b{color:var(--bad)}
+.fn-card.miss{border-style:dashed;border-color:#e9a92e;box-shadow:0 0 0 2px #e9a92e} .fn-card.miss .fn-why b{color:#b8861c}
+.fn-count{font-size:.88rem;color:var(--muted);margin-left:12px}

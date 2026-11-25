@@ -21,6 +21,9 @@
       <a class="hide-s" href="stage-1.html">階段 1</a>
       <a class="hide-s" href="stage-2.html">階段 2</a>
       <a class="hide-s" href="stage-3.html">階段 3</a>
+      <a class="hide-s" href="stage-4.html">階段 4</a>
+      <a class="hide-s" href="stage-5.html">階段 5</a>
+      <a class="hide-s" href="stage-6.html">階段 6</a>
       <button class="iconbtn" id="themeBtn" aria-label="切換深色模式"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
     </nav>
   </div>
@@ -64,7 +67,12 @@
         <h3>治療指數：同一個劑量，為什麼有人沒效、有人中毒</h3>
         <p>24 位病人吃同一個劑量，濃度卻各不相同。安全範圍窄的藥就有人沒效、有人中毒，這就是有些藥要抽血監測的原因。</p>
       </a>
-      <div class="labcard soon"><div class="img"><span>製作中</span></div><p class="num">Lab 04</p><h3>耐受性：為什麼越吃越沒感覺</h3><p>受體變少、身體適應了，同樣的劑量效果越來越弱，突然停藥又會反彈。</p></div>
+      <a class="labcard" href="lab-tolerance.html">
+        <div class="img"><img src="covers/tolerance.jpg" alt="細胞膜上的藍色受體有一半沉下去變成灰色圓片，黃色藥分子插在剩下的受體上，後方是 30 天吃藥日曆，前方的感覺計停在 36" loading="lazy" width="1200" height="630"></div>
+        <p class="num">Lab 04 <span class="badge" data-opened="tolerance">新</span></p>
+        <h3>耐受性：為什麼越吃越沒感覺</h3>
+        <p>每天吃一樣的劑量，受體被細胞收進去，效果越來越弱；突然停藥反而比吃藥前更差，慢慢減量就不會。</p>
+      </a>
     </div>
   </section>
 
@@ -74,7 +82,7 @@
       <li><div>受體、作用劑與拮抗劑<small>藥怎麼結合目標，作用劑啟動它，拮抗劑擋住它。（Lab 01）</small></div></li>
       <li><div>劑量反應曲線<small>劑量越高效果越大，但會趨近一個最大值；ED50 和最大效果代表什麼。（Lab 02）</small></div></li>
       <li><div>效力與效能<small>「小劑量就有效」和「最大效果比較強」是兩回事。（Lab 02）</small></div></li>
-      <li><div>治療指數與耐受性<small>有效和中毒之間的距離，以及身體適應藥物後會發生什麼事。</small></div></li>
+      <li><div>治療指數與耐受性<small>有效和中毒之間的距離（Lab 03），以及身體適應藥物後會發生什麼事（Lab 04）。</small></div></li>
     </ol>
     <p class="sub" style="margin-top:12px;font-size:.92rem">看到不熟的詞，可以查本頁的<a href="#gloss">名詞表</a>。</p>
   </section>
@@ -87,7 +95,7 @@
   </section>
 
   <section id="quiz">
-    <div class="card quiz" data-quiz='[{&quot;q&quot;: &quot;作用劑和拮抗劑都會結合同一個受體，差別在哪裡？&quot;, &quot;o&quot;: [&quot;作用劑會啟動受體，拮抗劑只占住、不啟動&quot;, &quot;拮抗劑的效果比較強&quot;, &quot;作用劑只在晚上有效&quot;], &quot;a&quot;: 0, &quot;e&quot;: &quot;像鑰匙和卡住的假鑰匙：都插得進鎖，只有作用劑轉得動。Lab 01 第 3 章。&quot;}, {&quot;q&quot;: &quot;一種藥已經占住 80% 的受體，劑量再加 4 倍，最可能？&quot;, &quot;o&quot;: [&quot;療效變成 4 倍&quot;, &quot;療效只多一點，副作用可能明顯增加&quot;, &quot;療效完全不變，副作用也不變&quot;], &quot;a&quot;: 1, &quot;e&quot;: &quot;受體快被占滿時，療效會趨近最大值；作用在其他受體的副作用卻可能繼續上升。Lab 01 第 2 章。&quot;}, {&quot;q&quot;: &quot;止痛藥 P 的 ED50 是 5 mg、最大效果 60%；止痛藥 E 的 ED50 是 50 mg、最大效果 100%。病人需要 80% 的止痛效果，該選？&quot;, &quot;o&quot;: [&quot;P，因為它小劑量就有效&quot;, &quot;E，因為只有它的最大效果到得了 80%&quot;, &quot;兩種都可以，只要加夠劑量&quot;], &quot;a&quot;: 1, &quot;e&quot;: &quot;P 的效力高，但效能只有 60%，再加量也到不了 80%。Lab 02 第 3 章。&quot;}, {&quot;q&quot;: &quot;覺得藥沒效，自己把劑量加倍，可能有什麼問題？&quot;, &quot;o&quot;: [&quot;沒有問題，加倍就會加倍有效&quot;, &quot;療效不一定增加，副作用和中毒風險卻會增加&quot;, &quot;只會讓藥更快排掉&quot;], &quot;a&quot;: 1, &quot;e&quot;: &quot;沒效的原因很多，可能是劑型、時間、交互作用或診斷。先問醫師或藥師，不要自己加量。&quot;}]'></div>
+    <div class="card quiz" data-quiz='[{&quot;q&quot;: &quot;作用劑和拮抗劑都會結合同一個受體，差別在哪裡？&quot;, &quot;o&quot;: [&quot;作用劑會啟動受體，拮抗劑只占住、不啟動&quot;, &quot;拮抗劑的效果比較強&quot;, &quot;作用劑只在晚上有效&quot;], &quot;a&quot;: 0, &quot;e&quot;: &quot;像鑰匙和卡住的假鑰匙：都插得進鎖，只有作用劑轉得動。Lab 01 第 3 章。&quot;}, {&quot;q&quot;: &quot;一種藥已經占住 80% 的受體，劑量再加 4 倍，最可能？&quot;, &quot;o&quot;: [&quot;療效變成 4 倍&quot;, &quot;療效只多一點，副作用可能明顯增加&quot;, &quot;療效完全不變，副作用也不變&quot;], &quot;a&quot;: 1, &quot;e&quot;: &quot;受體快被占滿時，療效會趨近最大值；作用在其他受體的副作用卻可能繼續上升。Lab 01 第 2 章。&quot;}, {&quot;q&quot;: &quot;止痛藥 P 的 ED50 是 5 mg、最大效果 60%；止痛藥 E 的 ED50 是 50 mg、最大效果 100%。病人需要 80% 的止痛效果，該選？&quot;, &quot;o&quot;: [&quot;P，因為它小劑量就有效&quot;, &quot;E，因為只有它的最大效果到得了 80%&quot;, &quot;兩種都可以，只要加夠劑量&quot;], &quot;a&quot;: 1, &quot;e&quot;: &quot;P 的效力高，但效能只有 60%，再加量也到不了 80%。Lab 02 第 3 章。&quot;}, {&quot;q&quot;: &quot;一種藥天天吃了兩週，同樣的劑量越來越沒感覺，最可能的原因是？&quot;, &quot;o&quot;: [&quot;藥過期了&quot;, &quot;身體適應了，例如細胞表面的受體變少&quot;, &quot;藥只對第一天有效&quot;], &quot;a&quot;: 1, &quot;e&quot;: &quot;這就是耐受性：細胞把受體收進去，同樣的劑量能啟動的受體變少。Lab 04 第 2 章。&quot;}, {&quot;q&quot;: &quot;已經產生耐受性的藥，為什麼有些不能突然停？&quot;, &quot;o&quot;: [&quot;停藥會讓藥在身體裡累積&quot;, &quot;受體還很少，只剩身體自己的訊號，可能比用藥前更差（反彈）&quot;, &quot;不會有任何影響，想停就停&quot;], &quot;a&quot;: 1, &quot;e&quot;: &quot;受體要好幾天才長回來，這段時間會反彈。是否要減量、怎麼減，請依醫師指示。Lab 04 第 3、4 章。&quot;}, {&quot;q&quot;: &quot;覺得藥沒效，自己把劑量加倍，可能有什麼問題？&quot;, &quot;o&quot;: [&quot;沒有問題，加倍就會加倍有效&quot;, &quot;療效不一定增加，副作用和中毒風險卻會增加&quot;, &quot;只會讓藥更快排掉&quot;], &quot;a&quot;: 1, &quot;e&quot;: &quot;沒效的原因很多，可能是劑型、時間、交互作用或診斷。先問醫師或藥師，不要自己加量。&quot;}]'></div>
   </section>
 
   <section>
@@ -118,19 +126,22 @@
       <details><summary>效能</summary><p>能達到的最大效果有多大，和需要多少劑量無關。</p></details>
       <details><summary>治療指數</summary><p>中毒劑量和有效劑量的比值。越小代表越要小心。</p></details>
       <details><summary>耐受性</summary><p>重複使用後，同樣劑量的效果變弱，需要更高劑量才有同樣效果。</p></details>
+      <details><summary>受體下調（減量調節）</summary><p>長期被作用劑刺激，細胞把表面的受體收進去或減少製造，讓訊號回到平常。</p></details>
+      <details><summary>反彈（戒斷症狀）</summary><p>身體適應藥物後突然停藥，原本的訊號作用在變少的受體上，症狀比用藥前更明顯。所以有些藥要依醫師指示慢慢減量。</p></details>
     </div>
   </section>
 
   <section aria-labelledby="done-h">
     <div class="card">
       <h2 id="done-h" style="font-size:1.15rem">完成這個階段後，你應該能夠</h2>
-      <p class="count" data-count="lp-s3-check" style="font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--muted);margin:0 0 6px">0 / 5</p>
+      <p class="count" data-count="lp-s3-check" style="font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--muted);margin:0 0 6px">0 / 6</p>
       <ul class="check" data-key="lp-s3-check">
         <li><label><input type="checkbox">用鑰匙與鎖解釋作用劑和拮抗劑的差別（Lab 01）</label></li>
         <li><label><input type="checkbox">說明為什麼劑量加倍，療效不一定加倍（Lab 01）</label></li>
         <li><label><input type="checkbox">看懂劑量反應曲線，說出 ED50 和最大效果的意思（Lab 02）</label></li>
         <li><label><input type="checkbox">分辨效力和效能，並舉一個例子（Lab 02）</label></li>
         <li><label><input type="checkbox">解釋治療指數小的藥為什麼需要抽血監測（Lab 03）</label></li>
+        <li><label><input type="checkbox">用受體變少解釋耐受性，並說明為什麼有些藥不能突然停（Lab 04）</label></li>
       </ul>
       <p class="check-note">你的進度保存在這個瀏覽器裡。</p>
     </div>
@@ -138,7 +149,7 @@
 
   <nav class="stagenav" aria-label="階段導覽">
     <a href="stage-2.html"><small>上一階段</small><b>2. 藥進入身體後</b></a>
-    <div class="r"><small>下一階段</small><b>4. 副作用與交互作用（即將推出）</b></div>
+    <a class="r" href="stage-4.html"><small>下一階段</small><b>4. 副作用與交互作用</b></a>
   </nav>
 </main>
 

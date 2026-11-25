@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lab 01：抗生素的療程｜從零開始學藥</title>
+<meta name="description" content="第 2 天就不難受了，抗生素還要繼續吃嗎？看提早停藥、常常漏吃和拿抗生素治感冒會發生什麼事。">
+<meta property="og:image" content="covers/abx.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="stage-1.html"><svg viewBox="0 0 26 26" aria-hidden="true"><g transform="rotate(-35 13 13)"><rect x="2" y="8" width="22" height="10" rx="5" fill="#fffdf8" stroke="currentColor" stroke-width="2"/><path d="M13 8h6a5 5 0 0 1 0 10h-6z" fill="#3a46aa" stroke="currentColor" stroke-width="2"/></g></svg>從零開始學藥</a>
+    <nav aria-label="主選單">
+      <a class="hide-s" href="stage-1.html">階段 1</a>
+      <a class="hide-s" href="stage-2.html">階段 2</a>
+      <a class="hide-s" href="stage-3.html">階段 3</a>
+      <a class="hide-s" href="stage-4.html">階段 4</a>
+      <a class="hide-s" href="stage-5.html">階段 5</a>
+      <a class="hide-s" href="stage-6.html">階段 6</a>
+      <button class="iconbtn" id="themeBtn" aria-label="切換深色模式"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <p class="crumb"><a href="stage-6.html">階段 6</a><span>/</span>Lab 01</p>
+  <div class="hero">
+    <p class="kicker ind">Lab 01</p>
+    <h1>抗生素為什麼要照療程吃</h1>
+    <p class="sub" style="font-size:1.08rem">吃抗生素第 2 天就不難受了，可是細菌還沒清完，剩下來的往往是比較耐藥的。提早停、常常漏吃，都是在幫它們篩選；拿抗生素治病毒感冒，則是完全沒用。</p>
+    <p class="meta">發布於 2026 年 11 月 24 日 <span class="tag">抗生素</span><span class="tag">抗藥性</span><span class="tag">療程</span></p>
+  </div>
+
+  <div class="embed" data-src="labs/abx/index.html?embed&amp;lang=zh" data-title="Lab 01 抗生素的療程" data-id="abx">
+    <div class="bar"><span class="mono">Lab 01</span><b>抗生素的療程</b><a class="full" href="labs/abx/index.html?lang=zh" target="_blank" rel="noopener">全螢幕開啟 ↗</a></div>
+    <div class="stagebox">
+      <img src="covers/abx.jpg" alt="" width="1200" height="630">
+      <button class="start"><b>▶ 開始 Lab</b><small>點擊後才會載入，大小約 450 KB</small></button>
+    </div>
+  </div>
+
+  <section class="howto" aria-labelledby="how-h">
+    <h2 id="how-h">怎麼玩</h2>
+    <p>培養皿是感染部位：藍點是對抗生素敏感的細菌，紅點是天生比較耐藥的細菌，綠色刺球是病毒（點越多，數量越多，以 10 的幾次方計）。藥盒有 7 天 × 3 格：實心是有吃、虛線是漏吃、打叉是停藥。溫度計是症狀，後方的看板畫出 10 天內細菌數量的變化，底下的橘條是血中有藥的時間。</p>
+    <ol class="learn">
+      <li><div>照療程吃<small>每 8 小時一次、吃滿醫師開的 7 天：第 2 天就舒服多了，第 4 天連比較耐藥的細菌也清掉。</small></div></li>
+      <li><div>第 3 天停藥<small>不難受了就自己停藥：剩下的幾乎都是比較耐藥的細菌，第 4 天起又長回來。</small></div></li>
+      <li><div>常常漏吃<small>一天三次只吃一次：藥的濃度大部分時間都不夠，一直沒好，紅色的耐藥菌接手。</small></div></li>
+      <li><div>其實是病毒<small>感冒大多是病毒，吃上次剩下的抗生素也殺不到它，一樣要等身體大約一週自己清掉。</small></div></li>
+    </ol>
+    <p>看完以後按「▶ 換你吃藥」：旋鈕調吃幾天，按 <kbd>K</kbd> 切換「一天只吃一次」，按 <kbd>V</kbd> 切換成病毒感染（改任何設定都會從第 1 天重新開始）。注意：這裡的藥、細菌和天數都是虛構的，真實的療程長短由醫師依感染決定。</p>
+    <div class="mistake" style="margin-top:14px"><h2 style="font-size:1rem">照醫師開的吃</h2><p>近年很多感染的建議療程比以前短，所以重點不是「一定要吃很多天」，而是照醫師開的療程吃：不要自己提早停、不要常常漏吃，也不要吃上次剩下或別人的抗生素。覺得不對勁、有副作用，先問醫師或藥師。</p></div>
+  </section>
+
+  <section aria-labelledby="model-h">
+    <h2 id="model-h">模型說明</h2>
+    <p class="secsub">這個 Lab 預設成立的前提，以及數字的來源。</p>
+    <div class="card model"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38 L32 28 L44 34 L20 44Z" fill="#3a46aa"/><rect x="10" y="10" width="22" height="26" rx="3" fill="#fffdf8" stroke="#1d2033" stroke-width="2"/><path d="M15 17h12M15 22h12M15 27h8" stroke="#1d2033" stroke-width="2" stroke-linecap="round"/></svg><p>抗生素 A 和這裡的細菌、病毒都是虛構的，所有數值都是為了說明原理而設定的教學假設，不代表任何真實的抗生素、感染或療程長短。感染部位一開始有 1 億隻對抗生素敏感的細菌和 1000 隻比較耐藥的細菌；細菌每小時增加 25%（上限 10 億），免疫系統能收拾很少量的細菌（約 100 隻以下時才有效）。抗生素 A 每 8 小時一次、半衰期 2 小時，殺菌速度依濃度呈 S 形曲線（最快每小時 0.6）；耐藥的細菌需要 4 倍濃度才殺得一樣快。症狀依細菌數量換算，10 萬隻以下幾乎沒感覺。第 4 章的病毒不受抗生素影響，大約一週後被免疫系統清掉。四章：吃滿 7 天（第 4 天清光）、第 3 天停藥（第 4 天起復發，回來的幾乎都是比較耐藥的）、一天只吃一次（一直沒好，耐藥的細菌接手）、病毒（吃不吃抗生素都一樣）。簡化假設：沒有考慮抗生素的種類、感染部位、新產生的突變和身體其他部位的細菌。背後的原理：覺得好了，不代表細菌已經清光；剩下來的往往是比較耐藥的，提早停藥或常常漏吃，就是在幫它們篩選。抗生素對病毒沒有作用。近年很多感染的建議療程比以前短，療程長短要由醫師依情況決定：照醫師開的吃，不要自己提早停、不要常常漏吃，也不要吃上次剩下或別人的抗生素。</p></div>
+  </section>
+
+  <nav class="stagenav" aria-label="Lab 導覽">
+    <a href="stage-6.html"><small>回到階段</small><b>階段 6：用藥安全實戰</b></a>
+    <a class="r" href="lab-store.html"><small>下一個 Lab</small><b>Lab 02：藥的保存</b></a>
+  </nav>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a class="logo" href="stage-1.html">從零開始學藥</a>
+    <p style="margin:0">本頁為一般教學內容，不是用藥建議。實際用藥請遵照醫師、藥師指示與藥品仿單。<br>互動 Lab 以 SIMULAB 引擎製作（KAPRI LAB，MIT 授權）。</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

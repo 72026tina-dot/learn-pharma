@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lab 04：耐受性｜從零開始學藥</title>
+<meta name="description" content="同樣的藥、同樣的劑量，為什麼越吃越沒感覺？看受體怎麼變少，以及為什麼停藥要慢慢減。">
+<meta property="og:image" content="covers/tolerance.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="stage-1.html"><svg viewBox="0 0 26 26" aria-hidden="true"><g transform="rotate(-35 13 13)"><rect x="2" y="8" width="22" height="10" rx="5" fill="#fffdf8" stroke="currentColor" stroke-width="2"/><path d="M13 8h6a5 5 0 0 1 0 10h-6z" fill="#3a46aa" stroke="currentColor" stroke-width="2"/></g></svg>從零開始學藥</a>
+    <nav aria-label="主選單">
+      <a class="hide-s" href="stage-1.html">階段 1</a>
+      <a class="hide-s" href="stage-2.html">階段 2</a>
+      <a class="hide-s" href="stage-3.html">階段 3</a>
+      <a class="hide-s" href="stage-4.html">階段 4</a>
+      <a class="hide-s" href="stage-5.html">階段 5</a>
+      <a class="hide-s" href="stage-6.html">階段 6</a>
+      <button class="iconbtn" id="themeBtn" aria-label="切換深色模式"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <p class="crumb"><a href="stage-3.html">階段 3</a><span>/</span>Lab 04</p>
+  <div class="hero">
+    <p class="kicker ind">Lab 04</p>
+    <h1>耐受性：為什麼越吃越沒感覺</h1>
+    <p class="sub" style="font-size:1.08rem">同樣的藥、同樣的劑量，吃了兩週卻越來越沒感覺。細胞會把受體收進去來適應藥，這時突然停藥，反而會比吃藥前更差。</p>
+    <p class="meta">發布於 2026 年 11 月 24 日 <span class="tag">耐受性</span><span class="tag">受體下調</span><span class="tag">停藥反彈</span></p>
+  </div>
+
+  <div class="embed" data-src="labs/tolerance/index.html?embed&amp;lang=zh" data-title="Lab 04 耐受性" data-id="tolerance">
+    <div class="bar"><span class="mono">Lab 04</span><b>耐受性</b><a class="full" href="labs/tolerance/index.html?lang=zh" target="_blank" rel="noopener">全螢幕開啟 ↗</a></div>
+    <div class="stagebox">
+      <img src="covers/tolerance.jpg" alt="" width="1200" height="630">
+      <button class="start"><b>▶ 開始 Lab</b><small>點擊後才會載入，大小約 450 KB</small></button>
+    </div>
+  </div>
+
+  <section class="howto" aria-labelledby="how-h">
+    <h2 id="how-h">怎麼玩</h2>
+    <p>細胞膜上有 24 個藍色受體。黃色鑰匙是示範藥 T，藍綠色小球是身體自己的訊號分子；被收進細胞裡的受體會沉下去、變成灰色的圓片。後方是 30 天的吃藥日曆，前方的感覺計顯示效果：綠色是有感覺，米色是平常，紅色是反彈（比沒吃藥時還差）。</p>
+    <ol class="learn">
+      <li><div>第一次吃<small>藥加上身體自己的訊號一起占住受體，感覺計從平常的 30 衝到 71。</small></div></li>
+      <li><div>天天吃<small>每天吃一樣的劑量，細胞把受體收進去：兩週後受體剩 12 個，感覺計回到 36，沒感覺了。</small></div></li>
+      <li><div>突然停藥<small>受體還很少，只剩身體自己的訊號，感覺計掉到 15：約 2 天比沒吃藥前還差。</small></div></li>
+      <li><div>慢慢減量<small>每 3 天減一點，受體邊減邊長回來，感覺計一直留在平常。</small></div></li>
+    </ol>
+    <p>看完以後按「▶ 換你吃藥」：旋鈕調每天的劑量，按住 <kbd>F</kbd> 快轉日子。挑戰：耐受以後把劑量加倍，效果能維持多久？再試試從高劑量一下子轉到 0，和慢慢轉下來比一比。</p>
+  </section>
+
+  <section aria-labelledby="model-h">
+    <h2 id="model-h">模型說明</h2>
+    <p class="secsub">這個 Lab 預設成立的前提，以及數字的來源。</p>
+    <div class="card model"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38 L32 28 L44 34 L20 44Z" fill="#3a46aa"/><rect x="10" y="10" width="22" height="26" rx="3" fill="#fffdf8" stroke="#1d2033" stroke-width="2"/><path d="M15 17h12M15 22h12M15 27h8" stroke="#1d2033" stroke-width="2" stroke-linecap="round"/></svg><p>示範藥 T 是虛構的作用劑，所有數值都是為了說明原理而設定的教學假設，不代表任何真實藥物。細胞表面原本有 24 個受體；藥和身體自己的訊號分子都會結合受體並啟動它（競爭性結合，劑量以親和常數為單位，身體訊號固定讓 30% 的受體被占住）。感覺計 = 受體數 × 被占住的比例 × 100，沒吃藥時是 30（平常），≥ 50 算有感覺，< 22 算反彈。適應：細胞想把訊號拉回平常，受體數會往 (平常 ÷ 占住比例)^0.8 慢慢靠近（時間常數 3 天，最多回到 24 個），這是受體下調（減量調節）的簡化示意。每天吃 2×：第 1 天感覺計 71，兩週後受體剩約 12 個、感覺計 36。第 15 天起突然停藥：受體還很少，感覺計掉到 15，約 2 天低於 22；慢慢減量（1.2×、0.7×、0.4×、0.2× 各 3 天，再停）則一直留在 22 以上。簡化假設：一天內的血中濃度起伏忽略不計，只看受體數量的變化；真實的耐受性還可能來自代謝變快、訊號傳遞改變等其他機制，而且速度依藥而異。背後的原理：長期使用作用劑，身體會減少受體或降低反應來適應，同樣的劑量效果變弱（耐受性）；這時突然停藥，原本的訊號作用在變少的受體上，就會比用藥前更差（反彈或戒斷症狀），所以有些藥需要依醫師指示慢慢減量。</p></div>
+  </section>
+
+  <nav class="stagenav" aria-label="Lab 導覽">
+    <a href="lab-index.html"><small>上一個 Lab</small><b>Lab 03：治療指數</b></a>
+    <a class="r" href="stage-3.html"><small>回到階段</small><b>階段 3：藥怎麼作用</b></a>
+  </nav>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a class="logo" href="stage-1.html">從零開始學藥</a>
+    <p style="margin:0">本頁為一般教學內容，不是用藥建議。實際用藥請遵照醫師、藥師指示與藥品仿單。<br>互動 Lab 以 SIMULAB 引擎製作（KAPRI LAB，MIT 授權）。</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

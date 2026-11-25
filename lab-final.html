@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lab 04：期末挑戰｜從零開始學藥</title>
+<meta name="description" content="林家一家人的藥櫃裡藏著 12 個用藥問題，每一個都來自前面的一個階段。你找得到幾個？">
+<meta property="og:image" content="covers/final.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/widgets.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="stage-1.html"><svg viewBox="0 0 26 26" aria-hidden="true"><g transform="rotate(-35 13 13)"><rect x="2" y="8" width="22" height="10" rx="5" fill="#fffdf8" stroke="currentColor" stroke-width="2"/><path d="M13 8h6a5 5 0 0 1 0 10h-6z" fill="#3a46aa" stroke="currentColor" stroke-width="2"/></g></svg>從零開始學藥</a>
+    <nav aria-label="主選單">
+      <a class="hide-s" href="stage-1.html">階段 1</a>
+      <a class="hide-s" href="stage-2.html">階段 2</a>
+      <a class="hide-s" href="stage-3.html">階段 3</a>
+      <a class="hide-s" href="stage-4.html">階段 4</a>
+      <a class="hide-s" href="stage-5.html">階段 5</a>
+      <a class="hide-s" href="stage-6.html">階段 6</a>
+      <button class="iconbtn" id="themeBtn" aria-label="切換深色模式"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <p class="crumb"><a href="stage-6.html">階段 6</a><span>/</span>Lab 04</p>
+  <div class="hero">
+    <p class="kicker ind">Lab 04</p>
+    <h1>期末挑戰：林家的藥櫃大會診</h1>
+    <p class="sub" style="font-size:1.08rem">林家一家人的藥櫃和用藥習慣，藏著好幾個問題，每一個都是前面某個階段教過的事；也有幾件其實做得很好。用上六個階段學到的，把有問題的找出來。</p>
+    <p class="meta">發布於 2026 年 11 月 25 日 <span class="tag">綜合練習</span><span class="tag">用藥安全</span><span class="tag">六個階段</span></p>
+  </div>
+
+  <div class="widget" id="wFinal">
+    <div class="bar"><span class="mono">Lab 04</span><b>林家的藥櫃大會診</b><span class="prog"></span></div>
+    <div class="in"></div>
+  </div>
+
+  <section class="howto" aria-labelledby="how-h">
+    <h2 id="how-h">怎麼玩</h2>
+    <p>一共 15 張卡片，每張是林家某個人的一個用藥習慣。點一下你覺得有問題的卡片，選好以後按「檢查」：綠框是答對，虛線框是漏掉的問題，紅框是其實做得對、卻被你標成有問題的。每張卡片都會說明原因，並連回教過這件事的 Lab。</p>
+    <p>提示：問題來自六個階段，包括重複成分、劑型、漏吃、耐受性、交互作用、效果疊加、小孩、長輩、懷孕、抗生素、保存和吸入劑。全部答對以後，記得回到階段 6 看看結業。</p>
+  </section>
+
+  <section aria-labelledby="model-h">
+    <h2 id="model-h">說明</h2>
+    <p class="secsub">這個練習用到的資料和限制。</p>
+    <div class="card model"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38 L32 28 L44 34 L20 44Z" fill="#3a46aa"/><rect x="10" y="10" width="22" height="26" rx="3" fill="#fffdf8" stroke="#1d2033" stroke-width="2"/><path d="M15 17h12M15 22h12M15 27h8" stroke="#1d2033" stroke-width="2" stroke-linecap="round"/></svg><p>林家的人物、藥名和情境都是虛構的，只為了練習把六個階段的重點用在生活裡。每張卡片的說明是一般原則，真實情況（例如漏吃怎麼補、懷孕或哺乳能不能用某種藥、吞不下能不能換劑型）要看藥品本身和個人狀況，請以醫師、藥師指示和仿單為準。</p></div>
+  </section>
+
+  <nav class="stagenav" aria-label="Lab 導覽">
+    <a href="lab-inhaler.html"><small>上一個 Lab</small><b>Lab 03：吸入劑</b></a>
+    <a class="r" href="stage-6.html#grad-h"><small>做完了</small><b>回到階段 6 看結業</b></a>
+  </nav>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a class="logo" href="stage-1.html">從零開始學藥</a>
+    <p style="margin:0">本頁為一般教學內容，不是用藥建議。實際用藥請遵照醫師、藥師指示與藥品仿單。<br>互動 Lab 以 SIMULAB 引擎製作（KAPRI LAB，MIT 授權）。</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script src="assets/final.js"></script>
+</body>
+</html>

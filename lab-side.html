@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lab 01：副作用從哪裡來｜從零開始學藥</title>
+<meta name="description" content="吃鼻水藥為什麼會想睡、口乾？看藥跑到別的器官、黏上別的受體，以及選擇性怎麼讓療效和副作用分開。">
+<meta property="og:image" content="covers/side.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="stage-1.html"><svg viewBox="0 0 26 26" aria-hidden="true"><g transform="rotate(-35 13 13)"><rect x="2" y="8" width="22" height="10" rx="5" fill="#fffdf8" stroke="currentColor" stroke-width="2"/><path d="M13 8h6a5 5 0 0 1 0 10h-6z" fill="#3a46aa" stroke="currentColor" stroke-width="2"/></g></svg>從零開始學藥</a>
+    <nav aria-label="主選單">
+      <a class="hide-s" href="stage-1.html">階段 1</a>
+      <a class="hide-s" href="stage-2.html">階段 2</a>
+      <a class="hide-s" href="stage-3.html">階段 3</a>
+      <a class="hide-s" href="stage-4.html">階段 4</a>
+      <a class="hide-s" href="stage-5.html">階段 5</a>
+      <a class="hide-s" href="stage-6.html">階段 6</a>
+      <button class="iconbtn" id="themeBtn" aria-label="切換深色模式"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <p class="crumb"><a href="stage-4.html">階段 4</a><span>/</span>Lab 01</p>
+  <div class="hero">
+    <p class="kicker ind">Lab 01</p>
+    <h1>副作用從哪裡來：吃鼻水藥，為什麼會想睡</h1>
+    <p class="sub" style="font-size:1.08rem">鼻水藥擋住鼻子的受體，鼻水止住了；可是腦裡有一樣的受體，唾液腺也有長得像的受體。比較兩種鼻水藥，看副作用從哪裡來，以及為什麼減量不一定能解決。</p>
+    <p class="meta">發布於 2026 年 11 月 24 日 <span class="tag">副作用</span><span class="tag">選擇性</span><span class="tag">血腦屏障</span></p>
+  </div>
+
+  <div class="embed" data-src="labs/side/index.html?embed&amp;lang=zh" data-title="Lab 01 副作用從哪裡來" data-id="side">
+    <div class="bar"><span class="mono">Lab 01</span><b>副作用從哪裡來</b><a class="full" href="labs/side/index.html?lang=zh" target="_blank" rel="noopener">全螢幕開啟 ↗</a></div>
+    <div class="stagebox">
+      <img src="covers/side.jpg" alt="" width="1200" height="630">
+      <button class="start"><b>▶ 開始 Lab</b><small>點擊後才會載入，大小約 450 KB</small></button>
+    </div>
+  </div>
+
+  <section class="howto" aria-labelledby="how-h">
+    <h2 id="how-h">怎麼玩</h2>
+    <p>一條血管接到三個器官：鼻子和腦都有藍色的 H 受體，唾液腺有粉紅色的 M 受體；腦的入口有一道血腦屏障。藥分子黏上受體就會把它擋住。後方的看板顯示每個器官被擋住的比例：鼻子要超過 50% 才止得住鼻水，腦或唾液腺超過 30% 就會想睡或口乾。</p>
+    <ol class="learn">
+      <li><div>藥 A 2×<small>鼻子 67%，鼻水止住了；可是腦 62% 想睡、唾液腺 33% 口乾。</small></div></li>
+      <li><div>藥 A 減量<small>想睡就少吃一點？鼻子和腦是同一種受體，一起變少：鼻水止不住，還是想睡。</small></div></li>
+      <li><div>藥 B 2×<small>藥 B 幾乎過不了血腦屏障，也不黏 M 受體：鼻子有效，腦和嘴巴沒事。</small></div></li>
+      <li><div>藥 B 8×<small>吃到 4 倍，漏進腦的藥也夠多了，連藥 B 都開始想睡。</small></div></li>
+    </ol>
+    <p>看完以後按「▶ 換你開藥」：旋鈕調劑量，按 <kbd>A</kbd> 或 <kbd>B</kbd> 換藥。挑戰：找得到讓藥 A 有效又不想睡的劑量嗎？藥 B 吃到幾倍會開始想睡？</p>
+  </section>
+
+  <section aria-labelledby="model-h">
+    <h2 id="model-h">模型說明</h2>
+    <p class="secsub">這個 Lab 預設成立的前提，以及數字的來源。</p>
+    <div class="card model"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38 L32 28 L44 34 L20 44Z" fill="#3a46aa"/><rect x="10" y="10" width="22" height="26" rx="3" fill="#fffdf8" stroke="#1d2033" stroke-width="2"/><path d="M15 17h12M15 22h12M15 27h8" stroke="#1d2033" stroke-width="2" stroke-linecap="round"/></svg><p>藥 A 與藥 B 都是虛構的，所有數值都是為了說明原理而設定的教學假設，不代表任何真實藥物。兩種藥都擋住 H 受體（拮抗劑），親和力相同；鼻子的 H 受體被擋住 = 止鼻水（療效，門檻 50%），腦裡的 H 受體被擋住 = 想睡（副作用，門檻 30%），唾液腺的 M 受體被擋住 = 口乾（副作用，門檻 30%）。占有率 = C ÷ (C + K)，劑量以 H 受體的親和常數 K 為單位。藥 A 進腦的比例是 0.8、也會結合 M 受體（K = 4）；藥 B 幾乎被血腦屏障擋住（進腦比例 0.08）、幾乎不結合 M 受體（K = 200）。簡化假設：血中和組織中的濃度立刻平衡，不考慮代謝和排除；畫面上藥進來的速度只是示意。背後的原理：很多副作用來自兩個地方，一是同一種受體也存在於其他器官（療效和副作用分不開，減量會一起變少），二是藥也黏上別種受體（選擇性不夠）。改用分布或選擇性不同的藥，可以讓療效和副作用分開，但選擇性是相對的，劑量太高仍會出現副作用。真實的抗組織胺藥有類似的差別，但個別藥物的性質請依醫師、藥師和仿單。</p></div>
+  </section>
+
+  <nav class="stagenav" aria-label="Lab 導覽">
+    <a href="stage-4.html"><small>回到階段</small><b>階段 4：副作用與交互作用</b></a>
+    <a class="r" href="lab-inhibit.html"><small>下一個 Lab</small><b>Lab 02：酵素被擋住</b></a>
+  </nav>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a class="logo" href="stage-1.html">從零開始學藥</a>
+    <p style="margin:0">本頁為一般教學內容，不是用藥建議。實際用藥請遵照醫師、藥師指示與藥品仿單。<br>互動 Lab 以 SIMULAB 引擎製作（KAPRI LAB，MIT 授權）。</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

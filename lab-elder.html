@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lab 02：長輩的藥｜從零開始學藥</title>
+<meta name="description" content="同樣一顆安眠藥、同樣的血中濃度，為什麼長輩白天容易頭暈跌倒？看腦的敏感度和處方瀑布。">
+<meta property="og:image" content="covers/elder.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="stage-1.html"><svg viewBox="0 0 26 26" aria-hidden="true"><g transform="rotate(-35 13 13)"><rect x="2" y="8" width="22" height="10" rx="5" fill="#fffdf8" stroke="currentColor" stroke-width="2"/><path d="M13 8h6a5 5 0 0 1 0 10h-6z" fill="#3a46aa" stroke="currentColor" stroke-width="2"/></g></svg>從零開始學藥</a>
+    <nav aria-label="主選單">
+      <a class="hide-s" href="stage-1.html">階段 1</a>
+      <a class="hide-s" href="stage-2.html">階段 2</a>
+      <a class="hide-s" href="stage-3.html">階段 3</a>
+      <a class="hide-s" href="stage-4.html">階段 4</a>
+      <a class="hide-s" href="stage-5.html">階段 5</a>
+      <a class="hide-s" href="stage-6.html">階段 6</a>
+      <button class="iconbtn" id="themeBtn" aria-label="切換深色模式"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <p class="crumb"><a href="stage-5.html">階段 5</a><span>/</span>Lab 02</p>
+  <div class="hero">
+    <p class="kicker ind">Lab 02</p>
+    <h1>長輩：同樣的濃度，為什麼比較容易頭暈跌倒</h1>
+    <p class="sub" style="font-size:1.08rem">長輩的腦對安眠、鎮靜類的藥比較敏感，同樣的血中濃度，白天更容易頭暈、跌倒。如果頭暈又被當成新的病再開一種藥，藥只會越吃越多。</p>
+    <p class="meta">發布於 2026 年 11 月 24 日 <span class="tag">長輩用藥</span><span class="tag">敏感度</span><span class="tag">處方瀑布</span></p>
+  </div>
+
+  <div class="embed" data-src="labs/elder/index.html?embed&amp;lang=zh" data-title="Lab 02 長輩的藥" data-id="elder">
+    <div class="bar"><span class="mono">Lab 02</span><b>長輩的藥</b><a class="full" href="labs/elder/index.html?lang=zh" target="_blank" rel="noopener">全螢幕開啟 ↗</a></div>
+    <div class="stagebox">
+      <img src="covers/elder.jpg" alt="" width="1200" height="630">
+      <button class="start"><b>▶ 開始 Lab</b><small>點擊後才會載入，大小約 450 KB</small></button>
+    </div>
+  </div>
+
+  <section class="howto" aria-labelledby="how-h">
+    <h2 id="how-h">怎麼玩</h2>
+    <p>一個人站在平衡板上，越頭暈晃得越厲害，頭上還會冒星星。後方的看板有兩條頭暈曲線：藍色虛線是 30 歲，紅色是 80 歲，中間的直線是現在的血中濃度。前方的試管是血中濃度，藥盒裡是每天吃的藥。</p>
+    <ol class="learn">
+      <li><div>30 歲<small>睡前一顆安眠藥 Q，第二天白天濃度還剩 6：頭暈 26%，大致清醒。</small></div></li>
+      <li><div>80 歲<small>吃一樣的一顆，濃度也是 6，可是長輩的曲線往左移：頭暈 54%，有跌倒風險。</small></div></li>
+      <li><div>加暈眩藥<small>頭暈被當成新的病，再開一種也會讓人想睡的暈眩藥 M：頭暈 76%，藥變成 5 種。這就是處方瀑布。</small></div></li>
+      <li><div>藥物整合<small>把所有的藥一起看，發現頭暈是 Q 造成的：停掉 M、Q 減成半顆，頭暈 23%。</small></div></li>
+    </ol>
+    <p>看完以後按「▶ 換你整合藥」：旋鈕調年紀和安眠藥 Q 的顆數，按 <kbd>M</kbd> 加上或停掉暈眩藥。挑戰：80 歲的長輩，Q 吃多少白天才不會頭暈？從幾歲開始，一顆 Q 就會有跌倒風險？</p>
+  </section>
+
+  <section aria-labelledby="model-h">
+    <h2 id="model-h">模型說明</h2>
+    <p class="secsub">這個 Lab 預設成立的前提，以及數字的來源。</p>
+    <div class="card model"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38 L32 28 L44 34 L20 44Z" fill="#3a46aa"/><rect x="10" y="10" width="22" height="26" rx="3" fill="#fffdf8" stroke="#1d2033" stroke-width="2"/><path d="M15 17h12M15 22h12M15 27h8" stroke="#1d2033" stroke-width="2" stroke-linecap="round"/></svg><p>安眠藥 Q 和暈眩藥 M 都是虛構的，所有數值都是為了說明原理而設定的教學假設，不代表任何真實藥物。睡前吃一顆 Q，第二天白天的血中濃度是 6；M 一顆相當於濃度 4（兩者效果相加，見階段 4 Lab 04）。白天頭暈程度 = C² ÷ (C² + EC50²)；腦的敏感度隨年紀增加，40 歲以下 EC50 = 10，之後線性下降到 85 歲的 5。頭暈 ≥ 30% 算有跌倒風險，≥ 60% 風險很高。為了只看敏感度，第 1、2 章讓年輕人和長輩的血中濃度一樣；真實的長輩常常因為肝腎功能變差，濃度也更高（見階段 2 Lab 04）。四章：30 歲 Q 一顆（26%）、80 歲 Q 一顆（54%）、再加 M（76%，5 種藥）、停掉 M 且 Q 減成半顆（23%）。簡化假設：其他慢性病用藥（血壓、血糖、膽固醇）在這裡不影響頭暈；真實的血壓藥也可能造成頭暈。背後的原理：年紀大了，腦對鎮靜、安眠類藥物比較敏感，同樣的濃度效果更強，加上平衡變差，容易跌倒。藥的副作用如果被當成新的病再開一種藥，就是「處方瀑布」，藥越吃越多、問題越來越大。長輩看診時把所有的藥（包括自己買的）帶給醫師、藥師一起看，是很重要的保護。是否調整或停藥，一定要和醫師討論，不要自己停。</p></div>
+  </section>
+
+  <nav class="stagenav" aria-label="Lab 導覽">
+    <a href="lab-syrup.html"><small>上一個 Lab</small><b>Lab 01：小孩不是縮小的大人</b></a>
+    <a class="r" href="lab-preg.html"><small>下一個 Lab</small><b>Lab 03：懷孕用藥</b></a>
+  </nav>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a class="logo" href="stage-1.html">從零開始學藥</a>
+    <p style="margin:0">本頁為一般教學內容，不是用藥建議。實際用藥請遵照醫師、藥師指示與藥品仿單。<br>互動 Lab 以 SIMULAB 引擎製作（KAPRI LAB，MIT 授權）。</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

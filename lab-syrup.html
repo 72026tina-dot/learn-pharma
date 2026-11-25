@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lab 01：小孩不是縮小的大人｜從零開始學藥</title>
+<meta name="description" content="孩子發燒了，藥要給多少、怎麼量？看按體重算劑量、用量藥空針，以及換瓶時為什麼要重新確認濃度。">
+<meta property="og:image" content="covers/syrup.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="stage-1.html"><svg viewBox="0 0 26 26" aria-hidden="true"><g transform="rotate(-35 13 13)"><rect x="2" y="8" width="22" height="10" rx="5" fill="#fffdf8" stroke="currentColor" stroke-width="2"/><path d="M13 8h6a5 5 0 0 1 0 10h-6z" fill="#3a46aa" stroke="currentColor" stroke-width="2"/></g></svg>從零開始學藥</a>
+    <nav aria-label="主選單">
+      <a class="hide-s" href="stage-1.html">階段 1</a>
+      <a class="hide-s" href="stage-2.html">階段 2</a>
+      <a class="hide-s" href="stage-3.html">階段 3</a>
+      <a class="hide-s" href="stage-4.html">階段 4</a>
+      <a class="hide-s" href="stage-5.html">階段 5</a>
+      <a class="hide-s" href="stage-6.html">階段 6</a>
+      <button class="iconbtn" id="themeBtn" aria-label="切換深色模式"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <p class="crumb"><a href="stage-5.html">階段 5</a><span>/</span>Lab 01</p>
+  <div class="hero">
+    <p class="kicker ind">Lab 01</p>
+    <h1>小孩不是縮小的大人：糖漿要怎麼量</h1>
+    <p class="sub" style="font-size:1.08rem">孩子的劑量看體重，不能把大人的劑量直接拿來用。就算算對了，用家裡的茶匙量、或換了一瓶濃度不同的藥水沒重新算，劑量還是會差很多。</p>
+    <p class="meta">發布於 2026 年 11 月 24 日 <span class="tag">兒童劑量</span><span class="tag">mg/kg</span><span class="tag">量藥空針</span></p>
+  </div>
+
+  <div class="embed" data-src="labs/syrup/index.html?embed&amp;lang=zh" data-title="Lab 01 小孩不是縮小的大人" data-id="syrup">
+    <div class="bar"><span class="mono">Lab 01</span><b>小孩不是縮小的大人</b><a class="full" href="labs/syrup/index.html?lang=zh" target="_blank" rel="noopener">全螢幕開啟 ↗</a></div>
+    <div class="stagebox">
+      <img src="covers/syrup.jpg" alt="" width="1200" height="630">
+      <button class="start"><b>▶ 開始 Lab</b><small>點擊後才會載入，大小約 450 KB</small></button>
+    </div>
+  </div>
+
+  <section class="howto" aria-labelledby="how-h">
+    <h2 id="how-h">怎麼玩</h2>
+    <p>12 公斤的孩子站在體重計上，後方的看板把每一次的劑量換算成「每公斤幾 mg」：灰色不夠、綠色剛好（10–20）、黃色偏高、紅色過量（25 以上）。前方有大人藥錠、糖漿（120 mg / 5 mL）和濃縮滴劑（250 mg / 5 mL），托盤上是這次用的量藥工具。</p>
+    <ol class="learn">
+      <li><div>大人一顆<small>大人一次 500 mg，孩子也吃一顆：每公斤 42 mg，過量。</small></div></li>
+      <li><div>按體重<small>15 mg/kg × 12 kg = 180 mg = 7.5 mL 糖漿，用量藥空針量：剛好。</small></div></li>
+      <li><div>用茶匙<small>7.5 mL 就是 1.5 茶匙？家裡的茶匙從 3 到 7 mL 都有，四次餵藥是 9 到 21 mg/kg，忽多忽少。</small></div></li>
+      <li><div>換濃縮滴劑<small>換了一瓶濃度高一倍的滴劑，還是量 7.5 mL：每公斤 31 mg，過量。</small></div></li>
+    </ol>
+    <p>看完以後按「▶ 換你量藥」：兩個旋鈕調體重和毫升數，按 <kbd>D</kbd> 換濃縮滴劑，按 <kbd>S</kbd> 改用茶匙。挑戰：換成濃縮滴劑時，12 公斤的孩子要量幾 mL 才剛好？20 公斤的孩子呢？</p>
+  </section>
+
+  <section aria-labelledby="model-h">
+    <h2 id="model-h">模型說明</h2>
+    <p class="secsub">這個 Lab 預設成立的前提，以及數字的來源。</p>
+    <div class="card model"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38 L32 28 L44 34 L20 44Z" fill="#3a46aa"/><rect x="10" y="10" width="22" height="26" rx="3" fill="#fffdf8" stroke="#1d2033" stroke-width="2"/><path d="M15 17h12M15 22h12M15 27h8" stroke="#1d2033" stroke-width="2" stroke-linecap="round"/></svg><p>示範退燒藥 P、它的糖漿和濃縮滴劑都是虛構的，所有數值都是為了說明原理而設定的教學假設，不代表任何真實藥物，也不是任何藥的兒童劑量。每次的劑量看體重：10–20 mg/kg 算剛好，低於 10 不夠，20–25 偏高，25 以上過量。孩子 12 公斤，大人一次 500 mg（一顆藥錠）。糖漿每 5 mL 含 120 mg（每 mL 24 mg），濃縮滴劑每 5 mL 含 250 mg（每 mL 50 mg）。第 2 章：15 mg/kg × 12 kg = 180 mg = 7.5 mL 糖漿。第 3 章：四支家用茶匙實際容量 3、4.5、6、7 mL，每次量 1.5 匙。第 4 章：濃縮滴劑量 7.5 mL = 375 mg。簡化假設：只看每一次的劑量，沒有考慮一天的總量、給藥間隔、年齡和肝腎功能；真實的兒童劑量上限、間隔和每天最多幾次，各藥不同。背後的原理：孩子的劑量通常依體重（有時依體表面積）計算，不能把大人的劑量直接拿來用；同一種成分可能有不同濃度的劑型，換瓶時要重新確認濃度；家用湯匙、茶匙的容量差很多，量藥水要用藥局附的量藥空針或量杯。真實用藥請依醫師、藥師指示和仿單。</p></div>
+  </section>
+
+  <nav class="stagenav" aria-label="Lab 導覽">
+    <a href="stage-5.html"><small>回到階段</small><b>階段 5：特殊族群</b></a>
+    <a class="r" href="lab-elder.html"><small>下一個 Lab</small><b>Lab 02：長輩的藥</b></a>
+  </nav>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a class="logo" href="stage-1.html">從零開始學藥</a>
+    <p style="margin:0">本頁為一般教學內容，不是用藥建議。實際用藥請遵照醫師、藥師指示與藥品仿單。<br>互動 Lab 以 SIMULAB 引擎製作（KAPRI LAB，MIT 授權）。</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>
